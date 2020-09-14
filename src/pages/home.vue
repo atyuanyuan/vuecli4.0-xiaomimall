@@ -1,12 +1,16 @@
 <template>
     <div>
-        home
+        <nav-header></nav-header>
+        <router-view></router-view>
+        <nav-footer></nav-footer>
     </div>
 </template>
 
 <script>
+import NavHeader from './../components/NavHeader'
+import NavFooter from './../components/NavFooter'
 export default {
-    name: 'home',
+    name: 'nav-home',
     props: {},
     data() {
         return {};
@@ -16,7 +20,10 @@ export default {
     mounted() {},
     watch: {},
     methods: {},
-    components: {},
+    components: {
+        NavHeader,
+        NavFooter
+    },
 };
 </script>
 <style scoped lang="scss">

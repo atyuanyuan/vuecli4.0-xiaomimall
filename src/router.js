@@ -1,14 +1,15 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '../pages/home.vue'
-import Index from '../pages/index'
-import Product from '../pages/product'
-import Detail from '../pages/detail'
-import Cart from '../pages/cart'
-import Order from '../pages/order'
-import OrderConfirm from '../pages/orderConfirm'
-import OrderList from '../pages/orderList'
-import AliPay from '../pages/alipay'
+import Home from './pages/home.vue'
+import Index from './pages/index.vue'
+import Product from './pages/product'
+import Detail from './pages/detail'
+import Cart from './pages/cart'
+import Login from './pages/login.vue'
+import Order from './pages/order'
+import OrderConfirm from './pages/orderConfirm'
+import OrderList from './pages/orderList'
+import AliPay from './pages/alipay.vue'
 Vue.use(Router)
 export default new Router({
   routes: [{
@@ -32,6 +33,11 @@ export default new Router({
           component: Detail
         }
       ]
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
     },
     {
       path: '/cart',
